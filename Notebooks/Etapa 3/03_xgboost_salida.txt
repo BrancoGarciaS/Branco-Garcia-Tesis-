@@ -1,0 +1,268 @@
+============================================================
+INICIANDO PIPELINE XGBOOST PARA: MORTALIDAD
+============================================================
+[1/5] Cargando datasets de entrenamiento...
+[2/5] Generando muestra balanceada...
+      -> Dimensiones: (780416, 110) | Clases: 2 (Multiclase: False)
+[3/5] Configurando Grid Search CV (K=5) con semilla...
+      -> scale_pos_weight calculado (Auto): 22.04
+[4/5] Entrenando modelo y evaluando configuraciones (monitoreo activado)...
+Fitting 5 folds for each of 9 candidates, totalling 45 fits
+[CV 1/5] END ...learning_rate=0.01, max_depth=3;, score=0.536 total time=   6.1s
+[CV 2/5] END ...learning_rate=0.01, max_depth=3;, score=0.537 total time=   3.9s
+[CV 3/5] END ...learning_rate=0.01, max_depth=3;, score=0.537 total time=   3.9s
+[CV 4/5] END ...learning_rate=0.01, max_depth=3;, score=0.538 total time=   4.1s
+[CV 5/5] END ...learning_rate=0.01, max_depth=3;, score=0.536 total time=   4.5s
+[CV 1/5] END ...learning_rate=0.01, max_depth=6;, score=0.564 total time=   5.2s
+[CV 2/5] END ...learning_rate=0.01, max_depth=6;, score=0.564 total time=   5.2s
+[CV 3/5] END ...learning_rate=0.01, max_depth=6;, score=0.562 total time=   5.3s
+[CV 4/5] END ...learning_rate=0.01, max_depth=6;, score=0.567 total time=   5.2s
+[CV 5/5] END ...learning_rate=0.01, max_depth=6;, score=0.561 total time=   5.3s
+[CV 1/5] END ..learning_rate=0.01, max_depth=10;, score=0.595 total time=   9.0s
+[CV 2/5] END ..learning_rate=0.01, max_depth=10;, score=0.594 total time=   7.6s
+[CV 3/5] END ..learning_rate=0.01, max_depth=10;, score=0.593 total time=   7.8s
+[CV 4/5] END ..learning_rate=0.01, max_depth=10;, score=0.598 total time=   7.8s
+[CV 5/5] END ..learning_rate=0.01, max_depth=10;, score=0.594 total time=   7.7s
+[CV 1/5] END ....learning_rate=0.1, max_depth=3;, score=0.592 total time=   3.6s
+[CV 2/5] END ....learning_rate=0.1, max_depth=3;, score=0.590 total time=   3.2s
+[CV 3/5] END ....learning_rate=0.1, max_depth=3;, score=0.590 total time=   3.6s
+[CV 4/5] END ....learning_rate=0.1, max_depth=3;, score=0.593 total time=   4.3s
+[CV 5/5] END ....learning_rate=0.1, max_depth=3;, score=0.589 total time=   4.4s
+[CV 1/5] END ....learning_rate=0.1, max_depth=6;, score=0.607 total time=   4.6s
+[CV 2/5] END ....learning_rate=0.1, max_depth=6;, score=0.606 total time=   4.5s
+[CV 3/5] END ....learning_rate=0.1, max_depth=6;, score=0.607 total time=   4.7s
+[CV 4/5] END ....learning_rate=0.1, max_depth=6;, score=0.609 total time=   4.9s
+[CV 5/5] END ....learning_rate=0.1, max_depth=6;, score=0.605 total time=   4.7s
+[CV 1/5] END ...learning_rate=0.1, max_depth=10;, score=0.631 total time=   6.7s
+[CV 2/5] END ...learning_rate=0.1, max_depth=10;, score=0.631 total time=   6.5s
+[CV 3/5] END ...learning_rate=0.1, max_depth=10;, score=0.634 total time=   6.5s
+[CV 4/5] END ...learning_rate=0.1, max_depth=10;, score=0.635 total time=   6.5s
+[CV 5/5] END ...learning_rate=0.1, max_depth=10;, score=0.632 total time=   6.4s
+[CV 1/5] END ....learning_rate=0.3, max_depth=3;, score=0.607 total time=   3.1s
+[CV 2/5] END ....learning_rate=0.3, max_depth=3;, score=0.605 total time=   3.4s
+[CV 3/5] END ....learning_rate=0.3, max_depth=3;, score=0.607 total time=   3.1s
+[CV 4/5] END ....learning_rate=0.3, max_depth=3;, score=0.608 total time=   3.2s
+[CV 5/5] END ....learning_rate=0.3, max_depth=3;, score=0.605 total time=   3.1s
+[CV 1/5] END ....learning_rate=0.3, max_depth=6;, score=0.623 total time=   4.4s
+[CV 2/5] END ....learning_rate=0.3, max_depth=6;, score=0.623 total time=   4.1s
+[CV 3/5] END ....learning_rate=0.3, max_depth=6;, score=0.623 total time=   4.2s
+[CV 4/5] END ....learning_rate=0.3, max_depth=6;, score=0.626 total time=   4.2s
+[CV 5/5] END ....learning_rate=0.3, max_depth=6;, score=0.623 total time=   4.3s
+[CV 1/5] END ...learning_rate=0.3, max_depth=10;, score=0.657 total time=   6.4s
+[CV 2/5] END ...learning_rate=0.3, max_depth=10;, score=0.660 total time=   6.0s
+[CV 3/5] END ...learning_rate=0.3, max_depth=10;, score=0.660 total time=   6.1s
+[CV 4/5] END ...learning_rate=0.3, max_depth=10;, score=0.659 total time=   6.1s
+[CV 5/5] END ...learning_rate=0.3, max_depth=10;, score=0.656 total time=   6.1s
+      -> Búsqueda completada en 4.07 minutos.
+      -> Evidencia de hiperparámetros guardada en: ../../Resultados/Resultados (etapa 3)/XGBoost\Resultados_GridSearch_XGB_MORTALIDAD.csv
+      -> Mejor configuración estable encontrada:
+         Hiperparámetros: {'learning_rate': 0.3, 'max_depth': 10}
+         F1-Macro Promedio: 0.6584 (std: 0.0018)
+[5/5] Evaluando en conjunto de prueba...
+
+--- RESULTADOS FINALES ---
+              precision    recall  f1-score   support
+
+           0       0.99      0.92      0.95   1111727
+           1       0.22      0.79      0.34     33407
+
+    accuracy                           0.91   1145134
+   macro avg       0.61      0.85      0.65   1145134
+weighted avg       0.97      0.91      0.94   1145134
+
+F1-Score (Clase 1): 0.3441
+F1-Score (Macro): 0.6484
+AUPRC: 0.4129
+AUC-ROC: 0.9492
+Brier Score: 0.0583
+
+------------------------------------------------------------
+VALIDACIÓN AUTOMÁTICA DE LIFT AUPRC: MORTALIDAD
+------------------------------------------------------------
+Total episodios de prueba: 1145134
+Tasa base (Prevalencia Azar): 0.0292 (2.92%)
+AUPRC Obtenido por tu modelo: 0.4129
+LIFT REAL LOGRADO: 14.15x
+AUPRC Mínimo exigido (Tasa Base x 3.0): 0.0875
+RESULTADO: Cumple condición de Lift > 3.0
+Importancias de Variables guardadas en: ../../Resultados/Resultados (etapa 3)/XGBoost\XGB_Importancia_Predictores_MORTALIDAD.csv
+============================================================
+
+
+============================================================
+INICIANDO PIPELINE XGBOOST PARA: SEVERIDAD
+============================================================
+[1/5] Cargando datasets de entrenamiento...
+[2/5] Generando muestra balanceada...
+      -> Dimensiones: (780416, 110) | Clases: 4 (Multiclase: True)
+[3/5] Configurando Grid Search CV (K=5) con semilla...
+[4/5] Entrenando modelo y evaluando configuraciones (monitoreo activado)...
+Fitting 5 folds for each of 9 candidates, totalling 45 fits
+[CV 1/5] END ...learning_rate=0.01, max_depth=3;, score=0.666 total time=  14.4s
+[CV 2/5] END ...learning_rate=0.01, max_depth=3;, score=0.665 total time=  12.7s
+[CV 3/5] END ...learning_rate=0.01, max_depth=3;, score=0.666 total time=  12.5s
+[CV 4/5] END ...learning_rate=0.01, max_depth=3;, score=0.667 total time=  12.3s
+[CV 5/5] END ...learning_rate=0.01, max_depth=3;, score=0.665 total time=  13.0s
+[CV 1/5] END ...learning_rate=0.01, max_depth=6;, score=0.706 total time=  18.6s
+[CV 2/5] END ...learning_rate=0.01, max_depth=6;, score=0.705 total time=  18.8s
+[CV 3/5] END ...learning_rate=0.01, max_depth=6;, score=0.706 total time=  19.3s
+[CV 4/5] END ...learning_rate=0.01, max_depth=6;, score=0.706 total time=  19.0s
+[CV 5/5] END ...learning_rate=0.01, max_depth=6;, score=0.704 total time=  18.8s
+[CV 1/5] END ..learning_rate=0.01, max_depth=10;, score=0.732 total time=  28.8s
+[CV 2/5] END ..learning_rate=0.01, max_depth=10;, score=0.733 total time=  28.8s
+[CV 3/5] END ..learning_rate=0.01, max_depth=10;, score=0.732 total time=  29.1s
+[CV 4/5] END ..learning_rate=0.01, max_depth=10;, score=0.735 total time=  29.1s
+[CV 5/5] END ..learning_rate=0.01, max_depth=10;, score=0.731 total time=  28.3s
+[CV 1/5] END ....learning_rate=0.1, max_depth=3;, score=0.721 total time=  12.6s
+[CV 2/5] END ....learning_rate=0.1, max_depth=3;, score=0.723 total time=  12.5s
+[CV 3/5] END ....learning_rate=0.1, max_depth=3;, score=0.722 total time=  12.5s
+[CV 4/5] END ....learning_rate=0.1, max_depth=3;, score=0.724 total time=  12.6s
+[CV 5/5] END ....learning_rate=0.1, max_depth=3;, score=0.721 total time=  12.4s
+[CV 1/5] END ....learning_rate=0.1, max_depth=6;, score=0.742 total time=  17.7s
+[CV 2/5] END ....learning_rate=0.1, max_depth=6;, score=0.742 total time=  17.6s
+[CV 3/5] END ....learning_rate=0.1, max_depth=6;, score=0.742 total time=  17.2s
+[CV 4/5] END ....learning_rate=0.1, max_depth=6;, score=0.744 total time=  17.1s
+[CV 5/5] END ....learning_rate=0.1, max_depth=6;, score=0.742 total time=  17.3s
+[CV 1/5] END ...learning_rate=0.1, max_depth=10;, score=0.754 total time=  24.0s
+[CV 2/5] END ...learning_rate=0.1, max_depth=10;, score=0.754 total time=  24.2s
+[CV 3/5] END ...learning_rate=0.1, max_depth=10;, score=0.754 total time=  24.1s
+[CV 4/5] END ...learning_rate=0.1, max_depth=10;, score=0.757 total time=  24.0s
+[CV 5/5] END ...learning_rate=0.1, max_depth=10;, score=0.754 total time=  24.4s
+[CV 1/5] END ....learning_rate=0.3, max_depth=3;, score=0.736 total time=  11.9s
+[CV 2/5] END ....learning_rate=0.3, max_depth=3;, score=0.737 total time=  11.6s
+[CV 3/5] END ....learning_rate=0.3, max_depth=3;, score=0.737 total time=  11.7s
+[CV 4/5] END ....learning_rate=0.3, max_depth=3;, score=0.739 total time=  11.3s
+[CV 5/5] END ....learning_rate=0.3, max_depth=3;, score=0.736 total time=  11.4s
+[CV 1/5] END ....learning_rate=0.3, max_depth=6;, score=0.751 total time=  15.2s
+[CV 2/5] END ....learning_rate=0.3, max_depth=6;, score=0.753 total time=  15.7s
+[CV 3/5] END ....learning_rate=0.3, max_depth=6;, score=0.753 total time=  15.2s
+[CV 4/5] END ....learning_rate=0.3, max_depth=6;, score=0.755 total time=  15.7s
+[CV 5/5] END ....learning_rate=0.3, max_depth=6;, score=0.752 total time=  15.3s
+[CV 1/5] END ...learning_rate=0.3, max_depth=10;, score=0.758 total time=  20.7s
+[CV 2/5] END ...learning_rate=0.3, max_depth=10;, score=0.758 total time=  21.5s
+[CV 3/5] END ...learning_rate=0.3, max_depth=10;, score=0.759 total time=  21.2s
+[CV 4/5] END ...learning_rate=0.3, max_depth=10;, score=0.760 total time=  21.0s
+[CV 5/5] END ...learning_rate=0.3, max_depth=10;, score=0.757 total time=  20.9s
+      -> Búsqueda completada en 14.11 minutos.
+      -> Evidencia de hiperparámetros guardada en: ../../Resultados/Resultados (etapa 3)/XGBoost\Resultados_GridSearch_XGB_SEVERIDAD.csv
+      -> Mejor configuración estable encontrada:
+         Hiperparámetros: {'learning_rate': 0.3, 'max_depth': 10}
+         F1-Macro Promedio: 0.7581 (std: 0.0012)
+[5/5] Evaluando en conjunto de prueba...
+
+--- RESULTADOS FINALES ---
+              precision    recall  f1-score   support
+
+           0       0.96      0.96      0.96    186805
+           1       0.74      0.86      0.80    475049
+           2       0.54      0.41      0.46    264286
+           3       0.70      0.66      0.68    218994
+
+    accuracy                           0.73   1145134
+   macro avg       0.73      0.72      0.72   1145134
+weighted avg       0.72      0.73      0.72   1145134
+
+F1-Score (Macro): 0.7248
+AUPRC (OvR Weighted): 0.7929
+AUC-ROC (OvR Weighted): 0.9032
+Brier Score (Multiclase): 0.0880
+
+------------------------------------------------------------
+VALIDACIÓN AUTOMÁTICA DE LIFT AUPRC: SEVERIDAD
+------------------------------------------------------------
+Total episodios de prueba: 1145134
+Tasa base (Prevalencia Azar): 0.2885 (28.85%)
+AUPRC Obtenido por tu modelo: 0.7929
+LIFT REAL LOGRADO: 2.75x
+RESULTADO: Target suficientemente balanceado
+Importancias de Variables guardadas en: ../../Resultados/Resultados (etapa 3)/XGBoost\XGB_Importancia_Predictores_SEVERIDAD.csv
+============================================================
+
+
+============================================================
+INICIANDO PIPELINE XGBOOST PARA: CONSUMO_RECURSOS
+============================================================
+[1/5] Cargando datasets de entrenamiento...
+[2/5] Generando muestra balanceada...
+      -> Dimensiones: (780416, 110) | Clases: 3 (Multiclase: True)
+[3/5] Configurando Grid Search CV (K=5) con semilla...
+[4/5] Entrenando modelo y evaluando configuraciones (monitoreo activado)...
+Fitting 5 folds for each of 9 candidates, totalling 45 fits
+[CV 1/5] END ...learning_rate=0.01, max_depth=3;, score=0.548 total time=  11.2s
+[CV 2/5] END ...learning_rate=0.01, max_depth=3;, score=0.547 total time=   9.6s
+[CV 3/5] END ...learning_rate=0.01, max_depth=3;, score=0.545 total time=   9.5s
+[CV 4/5] END ...learning_rate=0.01, max_depth=3;, score=0.548 total time=   9.4s
+[CV 5/5] END ...learning_rate=0.01, max_depth=3;, score=0.548 total time=   9.6s
+[CV 1/5] END ...learning_rate=0.01, max_depth=6;, score=0.631 total time=  14.3s
+[CV 2/5] END ...learning_rate=0.01, max_depth=6;, score=0.630 total time=  14.3s
+[CV 3/5] END ...learning_rate=0.01, max_depth=6;, score=0.626 total time=  14.6s
+[CV 4/5] END ...learning_rate=0.01, max_depth=6;, score=0.628 total time=  16.8s
+[CV 5/5] END ...learning_rate=0.01, max_depth=6;, score=0.628 total time=  15.7s
+[CV 1/5] END ..learning_rate=0.01, max_depth=10;, score=0.680 total time=  23.0s
+[CV 2/5] END ..learning_rate=0.01, max_depth=10;, score=0.679 total time=  22.9s
+[CV 3/5] END ..learning_rate=0.01, max_depth=10;, score=0.679 total time=  22.3s
+[CV 4/5] END ..learning_rate=0.01, max_depth=10;, score=0.676 total time=  22.7s
+[CV 5/5] END ..learning_rate=0.01, max_depth=10;, score=0.679 total time=  22.6s
+[CV 1/5] END ....learning_rate=0.1, max_depth=3;, score=0.678 total time=   9.1s
+[CV 2/5] END ....learning_rate=0.1, max_depth=3;, score=0.675 total time=   9.1s
+[CV 3/5] END ....learning_rate=0.1, max_depth=3;, score=0.679 total time=   9.1s
+[CV 4/5] END ....learning_rate=0.1, max_depth=3;, score=0.679 total time=   9.1s
+[CV 5/5] END ....learning_rate=0.1, max_depth=3;, score=0.679 total time=   9.0s
+[CV 1/5] END ....learning_rate=0.1, max_depth=6;, score=0.718 total time=  12.8s
+[CV 2/5] END ....learning_rate=0.1, max_depth=6;, score=0.718 total time=  12.8s
+[CV 3/5] END ....learning_rate=0.1, max_depth=6;, score=0.717 total time=  12.7s
+[CV 4/5] END ....learning_rate=0.1, max_depth=6;, score=0.717 total time=  12.8s
+[CV 5/5] END ....learning_rate=0.1, max_depth=6;, score=0.718 total time=  12.7s
+[CV 1/5] END ...learning_rate=0.1, max_depth=10;, score=0.741 total time=  18.8s
+[CV 2/5] END ...learning_rate=0.1, max_depth=10;, score=0.742 total time=  18.8s
+[CV 3/5] END ...learning_rate=0.1, max_depth=10;, score=0.741 total time=  18.7s
+[CV 4/5] END ...learning_rate=0.1, max_depth=10;, score=0.741 total time=  18.6s
+[CV 5/5] END ...learning_rate=0.1, max_depth=10;, score=0.740 total time=  18.4s
+[CV 1/5] END ....learning_rate=0.3, max_depth=3;, score=0.708 total time=   8.5s
+[CV 2/5] END ....learning_rate=0.3, max_depth=3;, score=0.707 total time=   8.7s
+[CV 3/5] END ....learning_rate=0.3, max_depth=3;, score=0.706 total time=   8.8s
+[CV 4/5] END ....learning_rate=0.3, max_depth=3;, score=0.708 total time=   8.8s
+[CV 5/5] END ....learning_rate=0.3, max_depth=3;, score=0.708 total time=   8.6s
+[CV 1/5] END ....learning_rate=0.3, max_depth=6;, score=0.737 total time=  11.5s
+[CV 2/5] END ....learning_rate=0.3, max_depth=6;, score=0.737 total time=  11.7s
+[CV 3/5] END ....learning_rate=0.3, max_depth=6;, score=0.736 total time=  11.7s
+[CV 4/5] END ....learning_rate=0.3, max_depth=6;, score=0.737 total time=  11.8s
+[CV 5/5] END ....learning_rate=0.3, max_depth=6;, score=0.737 total time=  11.9s
+[CV 1/5] END ...learning_rate=0.3, max_depth=10;, score=0.751 total time=  17.0s
+[CV 2/5] END ...learning_rate=0.3, max_depth=10;, score=0.751 total time=  16.8s
+[CV 3/5] END ...learning_rate=0.3, max_depth=10;, score=0.750 total time=  16.6s
+[CV 4/5] END ...learning_rate=0.3, max_depth=10;, score=0.751 total time=  16.7s
+[CV 5/5] END ...learning_rate=0.3, max_depth=10;, score=0.750 total time=  16.7s
+      -> Búsqueda completada en 10.88 minutos.
+      -> Evidencia de hiperparámetros guardada en: ../../Resultados/Resultados (etapa 3)/XGBoost\Resultados_GridSearch_XGB_CONSUMO_RECURSOS.csv
+      -> Mejor configuración estable encontrada:
+         Hiperparámetros: {'learning_rate': 0.3, 'max_depth': 10}
+         F1-Macro Promedio: 0.7505 (std: 0.0007)
+[5/5] Evaluando en conjunto de prueba...
+
+--- RESULTADOS FINALES ---
+              precision    recall  f1-score   support
+
+           0       0.79      0.81      0.80    384237
+           1       0.64      0.63      0.63    380666
+           2       0.77      0.76      0.76    380231
+
+    accuracy                           0.73   1145134
+   macro avg       0.73      0.73      0.73   1145134
+weighted avg       0.73      0.73      0.73   1145134
+
+F1-Score (Macro): 0.7311
+AUPRC (OvR Weighted): 0.8181
+AUC-ROC (OvR Weighted): 0.8948
+Brier Score (Multiclase): 0.1190
+
+------------------------------------------------------------
+VALIDACIÓN AUTOMÁTICA DE LIFT AUPRC: CONSUMO_RECURSOS
+------------------------------------------------------------
+Total episodios de prueba: 1145134
+Tasa base (Prevalencia Azar): 0.3333 (33.33%)
+AUPRC Obtenido por tu modelo: 0.8181
+LIFT REAL LOGRADO: 2.45x
+RESULTADO: Target suficientemente balanceado
+Importancias de Variables guardadas en: ../../Resultados/Resultados (etapa 3)/XGBoost\XGB_Importancia_Predictores_CONSUMO_RECURSOS.csv
+============================================================
