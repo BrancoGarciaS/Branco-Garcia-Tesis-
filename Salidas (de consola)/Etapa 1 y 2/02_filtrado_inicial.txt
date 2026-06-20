@@ -1,0 +1,92 @@
+============================================================
+PROCESANDO AÑO 2019
+============================================================
+Escaneando diagnósticos secundarios...
+Filas originales: 1,151,475
+Filas cargadas: 1,151,475
+Filas omitidas por errores de estructura: 0
+Filas válidas: 1,151,398
+Pacientes SIN cáncer: 1,053,569
+Pacientes CON cáncer: 97,829 (8.50%)
+  - Cáncer Principal: 46,241
+  - Cáncer Secundario: 51,588
+Dataset clasificado guardado en:
+  ../../Datos/Datos clasificados/GRD_CLASIFICADO_2019.csv
+
+============================================================
+PROCESANDO AÑO 2020
+============================================================
+Escaneando diagnósticos secundarios...
+Filas originales: 781,912
+Filas cargadas: 781,912
+Filas omitidas por errores de estructura: 0
+Filas válidas: 781,911
+Pacientes SIN cáncer: 716,985
+Pacientes CON cáncer: 64,926 (8.30%)
+  - Cáncer Principal: 35,294
+  - Cáncer Secundario: 29,632
+Dataset clasificado guardado en:
+  ../../Datos/Datos clasificados/GRD_CLASIFICADO_2020.csv
+
+============================================================
+PROCESANDO AÑO 2021
+============================================================
+Escaneando diagnósticos secundarios...
+Filas originales: 816,909
+Filas cargadas: 816,909
+Filas omitidas por errores de estructura: 0
+Filas válidas: 816,909
+Pacientes SIN cáncer: 748,983
+Pacientes CON cáncer: 67,926 (8.32%)
+  - Cáncer Principal: 38,836
+  - Cáncer Secundario: 29,090
+Dataset clasificado guardado en:
+  ../../Datos/Datos clasificados/GRD_CLASIFICADO_2021.csv
+
+============================================================
+PROCESANDO AÑO 2022
+============================================================
+Escaneando diagnósticos secundarios...
+Filas originales: 932,840
+Filas cargadas: 932,839
+Filas omitidas por errores de estructura: 1
+Filas válidas: 932,837
+Pacientes SIN cáncer: 854,768
+Pacientes CON cáncer: 78,069 (8.37%)
+  - Cáncer Principal: 44,827
+  - Cáncer Secundario: 33,242
+Dataset clasificado guardado en:
+  ../../Datos/Datos clasificados/GRD_CLASIFICADO_2022.csv
+
+============================================================
+PROCESANDO AÑO 2023
+============================================================
+Escaneando diagnósticos secundarios...
+Filas originales: 1,039,587
+Filas cargadas: 1,039,587
+Filas omitidas por errores de estructura: 0
+Filas válidas: 1,039,587
+Pacientes SIN cáncer: 948,872
+Pacientes CON cáncer: 90,715 (8.73%)
+  - Cáncer Principal: 51,784
+  - Cáncer Secundario: 38,931
+Dataset clasificado guardado en:
+  ../../Datos/Datos clasificados/GRD_CLASIFICADO_2023.csv
+
+============================================================
+PROCESANDO AÑO 2024
+============================================================
+Renombrando ID_BENEFICIARIO -> CIP_ENCRIPTADO
+Escaneando diagnósticos secundarios...
+Filas originales: 1,085,813
+Filas cargadas: 1,085,813
+Filas omitidas por errores de estructura: 0
+Filas válidas: 1,085,813
+Pacientes SIN cáncer: 986,660
+Pacientes CON cáncer: 99,153 (9.13%)
+  - Cáncer Principal: 55,111
+  - Cáncer Secundario: 44,042
+Dataset clasificado guardado en:
+  ../../Datos/Datos clasificados/GRD_CLASIFICADO_2024.csv
+
+Proceso de extracción y clasificación finalizado.
