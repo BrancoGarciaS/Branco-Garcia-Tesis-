@@ -2,6 +2,12 @@
 
 Este repositorio contiene todo el flujo de trabajo desarrollado bajo la metodología **CRISP-DM**, desde la extracción y preprocesamiento de datos de Grupos Relacionados de Diagnóstico (GRD) de FONASA, hasta el entrenamiento de modelos de Machine Learning y su respectiva explicabilidad (XAI) mediante valores SHAP.
 
+> **Acceso Directo a los resultados**
+> 
+> Nota: Si se desea explorar los gráficos, tablas de importancias, reportes de evaluación y los modelos finales (archivos `.pkl`) **sin necesidad de ejecutar el código localmente**, se puede acceder al respaldo completo de la carpeta de *Resultados* a través del siguiente enlace de Google Drive:
+> **[Ver resultados pre-calculados en Google Drive](https://drive.google.com/drive/folders/19NGut5praNVhTc209m7N1_OncmtUldxc?usp=sharing)**
+
+---
 ## Estructura del Repositorio
 
 La arquitectura del proyecto está organizada en tres directorios principales:
